@@ -41,7 +41,7 @@
         </div>
         <div class="list4">
           <ul>
-            <h3>Site</h3>
+            <h3>Sites</h3>
             <li><a href="#nogo">DC</a></li>
             <li><a href="#nogo">MAD Magazine</a></li>
             <li><a href="#nogo">DC Kids</a></li>

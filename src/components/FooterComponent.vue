@@ -56,7 +56,7 @@
   <div class="section-social">
     <div class="container">
       <div>
-        <button>sign-up now!</button>
+        <button><a href="#nogo">sign-up now!</a></button>
       </div>
       <div class="social-img">
         <span>follow us</span>
@@ -136,10 +136,19 @@ export default {
     justify-content: space-between;
 
     button {
-      border: 2px solid $bluetext;
+      border: 3px solid $bluetext;
       background-color: rgb(48, 48, 48);
       padding: 15px;
       font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: $bluetext;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
       text-transform: uppercase;
       color: white;
     }

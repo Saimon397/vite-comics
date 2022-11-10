@@ -81,7 +81,7 @@ export default {
 @use '../assets/style/partials/variabels' as *;
 
 .bg-section {
-  background-image: url(../../public/img/footer-bg.jpg);
+  background-image: url(../../img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;

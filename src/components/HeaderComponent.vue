@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="logo">
-      <img src="../../public/img/dc-logo.png" alt="logo-img">
+      <img src="../../img/dc-logo.png" alt="logo-img">
     </div>
     <nav>
       <ul>
@@ -27,7 +27,7 @@ export default {
         {
           text: "Comics",
           url: "#nogo",
-          current: true,
+          current: false,
         },
         {
           text: "Movies",
@@ -86,7 +86,6 @@ export default {
 
 ul {
   @include dflex;
-
   margin-left: 300px;
 
   li {
@@ -100,7 +99,7 @@ ul {
       text-decoration: none;
       color: $blacktext;
       height: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 57px;
 
       &.active,
       &:hover {

@@ -89,6 +89,7 @@ export default {
   .container {
     @include dflex;
     height: 55vh;
+    justify-content: space-between;
 
     .list {
       display: flex;
@@ -132,6 +133,7 @@ export default {
   .container {
     @include dflex;
     height: 100px;
+    justify-content: space-between;
 
     button {
       border: 2px solid $bluetext;

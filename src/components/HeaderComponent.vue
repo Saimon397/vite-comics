@@ -83,14 +83,18 @@ export default {
   @include dflex
 }
 
+
 ul {
   @include dflex;
 
+  margin-left: 300px;
+
   li {
-    margin-right: 10px;
+    margin-right: 25px;
     list-style: none;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 13px;
+    font-weight: bold;
 
     a {
       text-decoration: none;

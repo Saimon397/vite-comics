@@ -1,43 +1,72 @@
 <template>
   <div class="bg-section">
-    <ul>
-      <h4></h4>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-    </ul>
-    <ul>
-      <h4></h4>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-    </ul>
-    <ul>
-      <h4></h4>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-    </ul>
-    <ul>
-      <h4></h4>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-      <li><a href="#nogo"></a></li>
-    </ul>
-    <img src="../../img/dc-logo-bg.png" alt="logo-bg">
+    <div class="container">
+      <div class="list">
+        <div class="margin">
+          <div class="list1">
+            <ul>
+              <h3>Dc Comics</h3>
+              <li><a href="#nogo">Characters</a></li>
+              <li><a href="#nogo">Comics</a></li>
+              <li><a href="#nogo">Movies</a></li>
+              <li><a href="#nogo">TV</a></li>
+              <li><a href="#nogo">Games</a></li>
+              <li><a href="#nogo">Videos</a></li>
+              <li><a href="#nogo">News</a></li>
+            </ul>
+          </div>
+          <div class="list2">
+            <ul>
+              <h3>Shop</h3>
+              <li><a href="#nogo">Shop DC Collectibles</a></li>
+              <li><a href="#nogo">Shop DC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list3">
+          <ul>
+            <h3>Dc</h3>
+            <li><a href="#nogo">Term Of Use</a></li>
+            <li><a href="#nogo">Privacy policy (New)</a></li>
+            <li><a href="#nogo">Ad Choices</a></li>
+            <li><a href="#nogo">Advertising</a></li>
+            <li><a href="#nogo">Jobs</a></li>
+            <li><a href="#nogo">Subscription</a></li>
+            <li><a href="#nogo">Talent Workshops</a></li>
+            <li><a href="#nogo">CPSC Certificates</a></li>
+            <li><a href="#nogo">Ratings</a></li>
+            <li><a href="#nogo">Shop Help</a></li>
+            <li><a href="#nogo">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="list4">
+          <ul>
+            <h3>Site</h3>
+            <li><a href="#nogo">DC</a></li>
+            <li><a href="#nogo">MAD Magazine</a></li>
+            <li><a href="#nogo">DC Kids</a></li>
+            <li><a href="#nogo">DC Universe</a></li>
+            <li><a href="#nogo">DC Power Visa</a></li>
+          </ul>
+        </div>
+      </div>
+      <img src="../../img/dc-logo-bg.png" alt="logo-bg">
+    </div>
+  </div>
+  <div class="section-social">
+    <div class="container">
+      <div>
+        <button>sign-up now!</button>
+      </div>
+      <div class="social-img">
+        <span>follow us</span>
+        <a href="#nogo"><img src="../../img/footer-facebook.png" alt="logo-fb"></a>
+        <a href="#nogo"><img src="../../img/footer-twitter.png" alt="logo-tw"></a>
+        <a href="#nogo"><img src="../../img/footer-youtube.png" alt="logo-yt"></a>
+        <a href="#nogo"><img src="../../img/footer-pinterest.png" alt="logo-pint"></a>
+        <a href="#nogo"><img src="../../img/footer-periscope.png" alt="logo-per"></a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,12 +81,82 @@ export default {
 @use '../assets/style/partials/variabels' as *;
 
 .bg-section {
-  max-width: 100%;
   background-image: url(../../public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  @include dflex;
-  justify-content: space-between;
+
+  .container {
+    @include dflex;
+    height: 55vh;
+
+    .list {
+      display: flex;
+
+      .margin {
+        margin-right: 25px;
+      }
+
+      .list2 {
+        margin-top: 25px;
+      }
+    }
+
+    h3 {
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin-right: 30px;
+
+      li a {
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(152, 150, 149);
+        @include dflex;
+        justify-content: flex-start;
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+      }
+    }
+
+  }
+}
+
+.section-social {
+  background-color: rgb(48, 48, 48);
+
+  .container {
+    @include dflex;
+    height: 100px;
+
+    button {
+      border: 2px solid $bluetext;
+      background-color: rgb(48, 48, 48);
+      padding: 15px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .social-img {
+      @include dflex;
+
+      span {
+        color: $bluetext;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+
+      span,
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 </style>

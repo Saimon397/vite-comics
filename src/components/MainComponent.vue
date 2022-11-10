@@ -37,7 +37,7 @@ export default {
         },
         {
           img: '/img/buy-comics-shop-locator.png',
-          text: 'comici shop locator',
+          text: 'comic shop locator',
           url: '#nogo'
         },
         {

@@ -6,7 +6,7 @@
     <ul>
       <li v-for="(img, index) in cont2img" :key="index">
         <a :href="img.url">
-          <img :src="img.img" :alt="img.text" class="logo-blue">
+          <img :src="img.img" :alt="img.text" class="ico-img">
           <span>{{ img.text }}</span>
         </a>
       </li>
@@ -21,27 +21,27 @@ export default {
     return {
       cont2img: [
         {
-          img: '/public/img/buy-comics-digital-comics.png',
+          img: '/img/buy-comics-digital-comics.png',
           text: 'digital comics',
           url: '#nogo'
         },
         {
-          img: '/public/img/buy-comics-merchandise.png',
+          img: '/img/buy-comics-merchandise.png',
           text: 'dc merchandise',
           url: '#nogo'
         },
         {
-          img: '/public/img/buy-comics-subscriptions.png',
+          img: '/img/buy-comics-subscriptions.png',
           text: 'subscription',
           url: '#nogo'
         },
         {
-          img: '/public/img/buy-comics-shop-locator.png',
+          img: '/img/buy-comics-shop-locator.png',
           text: 'comici shop locator',
           url: '#nogo'
         },
         {
-          img: '/public/img/buy-dc-power-visa.svg',
+          img: '/img/buy-dc-power-visa.svg',
           text: 'dc power visa',
           url: '#nogo'
         },
@@ -87,7 +87,7 @@ export default {
       @include dflex;
       font-size: 0.9rem;
 
-      .logo-blue {
+      .ico-img {
         height: 6vh;
       }
 

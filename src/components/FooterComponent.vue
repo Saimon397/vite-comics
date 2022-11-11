@@ -108,13 +108,13 @@ export default {
       &:hover {
         background-color: $bluetext;
       }
-    }
 
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: white;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+      }
     }
 
     .social-img {
@@ -130,6 +130,11 @@ export default {
       span,
       img {
         margin-right: 20px;
+      }
+
+      a img:hover {
+        background-color: white;
+        border-radius: 100%;
       }
     }
   }

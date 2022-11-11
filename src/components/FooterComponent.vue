@@ -2,7 +2,7 @@
   <div class="bg-section">
     <div class="container">
       <div class="list">
-        <ListFooter v-for="(item, index) in menuFooter" :key="index" :obj="item" />
+        <ListFooter v-for="(item, index) in ArrayFooter" :key="index" :obj="item" />
       </div>
       <img src="../../img/dc-logo-bg.png" alt="logo-bg">
     </div>
@@ -25,13 +25,13 @@
 </template>
 
 <script>
-import { menuFooter } from '../data/dc-comics'
+import { ArrayFooter } from '../data/dc-comics'
 import ListFooter from './ListFooter.vue';
 export default {
   name: "FooterComponent",
   data() {
     return {
-      menuFooter: menuFooter
+      ArrayFooter: ArrayFooter
     };
   },
   components: { ListFooter }

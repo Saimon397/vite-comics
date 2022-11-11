@@ -73,7 +73,7 @@ const comics = [
   }
 ]
 
-const menuFooter = [
+const ArrayFooter = [
   {
     title: "DC Comics",
     links: [
@@ -202,4 +202,4 @@ const menuFooter = [
     ],
   }
 ];
-export { comics, menuFooter }
+export { comics, ArrayFooter }

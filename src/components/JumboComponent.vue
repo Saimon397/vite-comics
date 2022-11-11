@@ -31,7 +31,6 @@ export default {
         background-color: $bluetext;
         height: 60px;
         padding: 10px;
-        color: white;
 
         &:hover {
             background-color: rgb(9, 111, 206);

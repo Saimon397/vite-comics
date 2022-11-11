@@ -140,10 +140,10 @@ export default {
       background-color: rgb(48, 48, 48);
       padding: 15px;
       font-size: 1rem;
-    }
 
-    button:hover {
-      background-color: $bluetext;
+      &:hover {
+        background-color: $bluetext;
+      }
     }
 
     a {

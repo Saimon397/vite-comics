@@ -2,53 +2,7 @@
   <div class="bg-section">
     <div class="container">
       <div class="list">
-        <div class="margin">
-          <div class="list1">
-            <ul>
-              <h3>Dc Comics</h3>
-              <li><a href="#nogo">Characters</a></li>
-              <li><a href="#nogo">Comics</a></li>
-              <li><a href="#nogo">Movies</a></li>
-              <li><a href="#nogo">TV</a></li>
-              <li><a href="#nogo">Games</a></li>
-              <li><a href="#nogo">Videos</a></li>
-              <li><a href="#nogo">News</a></li>
-            </ul>
-          </div>
-          <div class="list2">
-            <ul>
-              <h3>Shop</h3>
-              <li><a href="#nogo">Shop DC Collectibles</a></li>
-              <li><a href="#nogo">Shop DC</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="list3">
-          <ul>
-            <h3>Dc</h3>
-            <li><a href="#nogo">Term Of Use</a></li>
-            <li><a href="#nogo">Privacy policy (New)</a></li>
-            <li><a href="#nogo">Ad Choices</a></li>
-            <li><a href="#nogo">Advertising</a></li>
-            <li><a href="#nogo">Jobs</a></li>
-            <li><a href="#nogo">Subscription</a></li>
-            <li><a href="#nogo">Talent Workshops</a></li>
-            <li><a href="#nogo">CPSC Certificates</a></li>
-            <li><a href="#nogo">Ratings</a></li>
-            <li><a href="#nogo">Shop Help</a></li>
-            <li><a href="#nogo">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="list4">
-          <ul>
-            <h3>Sites</h3>
-            <li><a href="#nogo">DC</a></li>
-            <li><a href="#nogo">MAD Magazine</a></li>
-            <li><a href="#nogo">DC Kids</a></li>
-            <li><a href="#nogo">DC Universe</a></li>
-            <li><a href="#nogo">DC Power Visa</a></li>
-          </ul>
-        </div>
+        <ListFooter v-for="(item, index) in menuFooter" :key="index" :obj="item" />
       </div>
       <img src="../../img/dc-logo-bg.png" alt="logo-bg">
     </div>
@@ -71,12 +25,20 @@
 </template>
 
 <script>
+import { menuFooter } from '../data/dc-comics'
+import ListFooter from './ListFooter.vue';
 export default {
-
+  name: "FooterComponent",
+  data() {
+    return {
+      menuFooter: menuFooter
+    };
+  },
+  components: { ListFooter }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../assets/style/partials/mixins' as *;
 @use '../assets/style/partials/variabels' as *;
 
@@ -93,20 +55,21 @@ export default {
 
     .list {
       display: flex;
+      flex-wrap: wrap;
 
-      .margin {
-        margin-right: 25px;
+      .listMenu {
+        width: calc(100%/3);
       }
 
-      .list2 {
-        margin-top: 25px;
+      .listMenu:last-child {
+        margin-top: -50px;
       }
     }
 
     h3 {
       color: white;
       text-transform: uppercase;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
 
     ul {
@@ -114,13 +77,14 @@ export default {
       margin-right: 30px;
 
       li a {
-        display: inline-block;
         text-decoration: none;
         color: rgb(152, 150, 149);
-        @include dflex;
-        justify-content: flex-start;
         font-size: 0.8rem;
         margin-bottom: 4px;
+
+        &:hover {
+          color: white;
+        }
       }
     }
 

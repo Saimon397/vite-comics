@@ -73,7 +73,7 @@ export default {
 }
 
 .btn {
-    margin-top: 60px;
+    margin-top: 70px;
     text-align: center;
 
     button {
@@ -86,6 +86,7 @@ export default {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1em;
+        margin-bottom: 30px;
 
         a {
             color: white;

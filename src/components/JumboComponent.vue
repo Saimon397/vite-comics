@@ -29,7 +29,7 @@ export default {
         bottom: -30px;
         border: none;
         background-color: $bluetext;
-        height: 60px;
+        height: 55px;
         padding: 10px;
 
         &:hover {

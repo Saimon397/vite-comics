@@ -26,10 +26,10 @@ export default {
     button {
         position: absolute;
         left: 200px;
-        bottom: -20px;
+        bottom: -30px;
         border: none;
         background-color: $bluetext;
-        height: 50px;
+        height: 60px;
         padding: 10px;
         color: white;
 
@@ -42,7 +42,7 @@ export default {
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 1.2em;
+            font-size: 1.8em;
         }
     }
 }

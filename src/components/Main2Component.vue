@@ -1,5 +1,5 @@
 <template>
-  <div class="container2">
+  <div class="container">
     <ul>
       <li v-for="(img, index) in cont2img" :key="index">
         <a :href="img.url">
@@ -52,7 +52,7 @@ export default {
 @use '../assets/style/partials/mixins' as *;
 @use '../assets/style/partials/variabels' as *;
 
-.container2 {
+.container {
   @include dflex;
   background-color: $bluetext;
   max-width: 100%;
